@@ -87,7 +87,8 @@
     },
     "path": "/"
   },
-  "name": "Titanic onboarding",
+  "name": "Titanic EGG",
+  "imgPattern": 8,
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -143,11 +144,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1572442567312
+    "lastModifiedOn": 1572442578370
   },
   "creationTag": {
     "versionNumber": 0,
