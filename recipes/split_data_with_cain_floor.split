@@ -85,7 +85,7 @@
           "conditions": [
             {
               "input": "Survived",
-              "col": "Survived",
+              "col": "PassengerId",
               "num": 0,
               "operator": "not empty string"
             }
