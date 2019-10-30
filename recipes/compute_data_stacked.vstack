@@ -1,0 +1,123 @@
+{
+  "mode": "UNION",
+  "selectedColumns": [
+    "PassengerId",
+    "Survived",
+    "Name",
+    "Sex",
+    "Age",
+    "Siblings - Spouse",
+    "Parents - Children",
+    "Ticket",
+    "Ticket class",
+    "Fare",
+    "Cabin",
+    "Port of embarkation"
+  ],
+  "originColumnName": "original_dataset",
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "labeled_data",
+      "index": 0
+    },
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "data_to_predict",
+      "index": 1
+    }
+  ],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "PassengerId",
+            "type": "string"
+          },
+          {
+            "name": "Survived",
+            "type": "string"
+          },
+          {
+            "name": "Name",
+            "type": "string"
+          },
+          {
+            "name": "Sex",
+            "type": "string"
+          },
+          {
+            "name": "Age",
+            "type": "string"
+          },
+          {
+            "name": "Siblings - Spouse",
+            "type": "string"
+          },
+          {
+            "name": "Parents - Children",
+            "type": "string"
+          },
+          {
+            "name": "Ticket",
+            "type": "string"
+          },
+          {
+            "name": "Ticket class",
+            "type": "string"
+          },
+          {
+            "name": "Fare",
+            "type": "string"
+          },
+          {
+            "name": "Cabin",
+            "type": "string"
+          },
+          {
+            "name": "Port of embarkation",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    },
+    "distinct": false,
+    "enabled": false
+  },
+  "addOriginColumn": false
+}

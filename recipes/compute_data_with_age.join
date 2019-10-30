@@ -1,0 +1,207 @@
+{
+  "joins": [
+    {
+      "table2": 1,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": [
+        {
+          "column1": {
+            "name": "Ticket class",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "Ticket class",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        }
+      ]
+    }
+  ],
+  "selectedColumns": [
+    {
+      "name": "PassengerId",
+      "type": "bigint",
+      "table": 0
+    },
+    {
+      "name": "Survived",
+      "type": "bigint",
+      "table": 0
+    },
+    {
+      "name": "Title",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "Sex",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "Age",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "Siblings - Spouse",
+      "type": "bigint",
+      "table": 0
+    },
+    {
+      "name": "Parents - Children",
+      "type": "bigint",
+      "table": 0
+    },
+    {
+      "name": "Ticket",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "Ticket class",
+      "type": "bigint",
+      "table": 0
+    },
+    {
+      "name": "Fare",
+      "type": "double",
+      "table": 0
+    },
+    {
+      "name": "Cabin",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "Port of embarkation",
+      "type": "string",
+      "table": 0
+    },
+    {
+      "name": "Age_avg_by_class",
+      "type": "double",
+      "table": 1
+    }
+  ],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "autoSelectColumns": false,
+      "index": 0,
+      "computedColumns": []
+    },
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "autoSelectColumns": false,
+      "index": 1,
+      "computedColumns": []
+    }
+  ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "PassengerId",
+            "type": "bigint"
+          },
+          {
+            "name": "Survived",
+            "type": "bigint"
+          },
+          {
+            "name": "Title",
+            "type": "string"
+          },
+          {
+            "name": "Sex",
+            "type": "string"
+          },
+          {
+            "name": "Age",
+            "type": "double"
+          },
+          {
+            "name": "Siblings - Spouse",
+            "type": "bigint"
+          },
+          {
+            "name": "Parents - Children",
+            "type": "bigint"
+          },
+          {
+            "name": "Ticket",
+            "type": "string"
+          },
+          {
+            "name": "Ticket class",
+            "type": "bigint"
+          },
+          {
+            "name": "Fare",
+            "type": "double"
+          },
+          {
+            "name": "Cabin",
+            "type": "string"
+          },
+          {
+            "name": "Port of embarkation",
+            "type": "string"
+          },
+          {
+            "name": "Age_avg_by_class",
+            "type": "double"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
+  "enableAutoCastInJoinConditions": false
+}
