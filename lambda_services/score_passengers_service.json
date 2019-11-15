@@ -4,7 +4,26 @@
     {
       "modelRef": "ZlvVnLTT",
       "useJava": true,
-      "testQueries": [],
+      "testQueries": [
+        {
+          "name": "labeled #1",
+          "q": {
+            "features": {
+              "PassengerId": 1,
+              "Survived": 0,
+              "Title": "Mr",
+              "Sex": "male",
+              "Age": 22,
+              "Siblings - Spouse": 1,
+              "Parents - Children": 0,
+              "Ticket": "A/5 21171",
+              "Ticket class": 3,
+              "Fare": 7.25,
+              "Port of embarkation": "S"
+            }
+          }
+        }
+      ],
       "enrichMapping": [],
       "healthCheckQueries": [],
       "id": "score_passengers_endpoint_1",
