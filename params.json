@@ -22,7 +22,9 @@
     },
     "flowBuildSettings": {
       "mergeSparkPipelines": false,
-      "pruneBeforeSparkPipelines": true
+      "pruneBeforeSparkPipelines": true,
+      "mergeSqlPipelines": false,
+      "pruneBeforeSqlPipelines": true
     },
     "limitsSettings": {
       "memSampleBytes": {
@@ -85,7 +87,23 @@
     "cluster": {
       "clusterMode": "INHERIT"
     },
-    "path": "/"
+    "k8sCluster": {
+      "clusterMode": "INHERIT"
+    },
+    "virtualWebAppBackendSettings": {
+      "mode": "INHERIT",
+      "preventOverride": false,
+      "infra": {
+        "containerSelection": {
+          "containerMode": "INHERIT"
+        },
+        "exposition": {
+          "type": "local_process",
+          "params": {}
+        },
+        "nbReplicas": 1
+      }
+    }
   },
   "name": "Titanic EGG",
   "imgPattern": 8,
@@ -145,11 +163,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1572442855725
+    "lastModifiedOn": 1573810750771
   },
   "creationTag": {
     "versionNumber": 0,
@@ -160,11 +178,12 @@
   },
   "shortDesc": "The project *Titanic onboarding* was created by Paul HERVET on Oct 02nd 2019",
   "tags": [
-    "imported"
+    "imported",
+    "duplicated"
   ],
   "customFields": {
-    "gdpr_forbid_dataset_sharing": false,
     "gdpr_forbid_dataset_export": false,
+    "gdpr_forbid_dataset_sharing": false,
     "gdpr_forbid_model_creation": false,
     "gdpr_forbid_uploaded_datasets": false
   },

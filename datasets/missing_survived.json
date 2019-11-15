@@ -75,7 +75,7 @@
   "tags": [],
   "params": {
     "connection": "filesystem_managed",
-    "path": "/TITANICEGG.missing_survived",
+    "path": "/COPYOFTITANICEGG.missing_survived",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",

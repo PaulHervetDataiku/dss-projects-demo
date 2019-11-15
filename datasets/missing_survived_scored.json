@@ -75,7 +75,7 @@
   "tags": [],
   "params": {
     "connection": "filesystem_managed",
-    "path": "${projectKey}/missing_survived_scored",
+    "path": "/COPYOFTITANICEGG.missing_survived_scored",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",
