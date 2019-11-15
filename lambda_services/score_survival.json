@@ -1,9 +1,28 @@
 {
+  "name": "score_survival",
   "endpoints": [
     {
       "modelRef": "ZlvVnLTT",
       "useJava": true,
-      "testQueries": [],
+      "testQueries": [
+        {
+          "name": "missing_survived #1",
+          "q": {
+            "features": {
+              "PassengerId": 892,
+              "Title": "Mr",
+              "Sex": "male",
+              "Age": 34.5,
+              "Siblings - Spouse": 0,
+              "Parents - Children": 0,
+              "Ticket": "330911",
+              "Ticket class": 3,
+              "Fare": 7.8292,
+              "Port of embarkation": "Q"
+            }
+          }
+        }
+      ],
       "enrichMapping": [],
       "healthCheckQueries": [],
       "id": "score_survival_endpoint_1",
