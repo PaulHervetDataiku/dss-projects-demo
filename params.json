@@ -105,7 +105,7 @@
       }
     }
   },
-  "name": "Titanic EGG",
+  "name": "Copy of Titanic EGG",
   "imgPattern": 8,
   "showInitials": false,
   "metrics": {
@@ -163,11 +163,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1573810750771
+    "lastModifiedOn": 1573810753387
   },
   "creationTag": {
     "versionNumber": 0,
@@ -176,7 +176,7 @@
     },
     "lastModifiedOn": 1570007979680
   },
-  "shortDesc": "The project *Titanic onboarding* was created by Paul HERVET on Oct 02nd 2019",
+  "shortDesc": "The project *Titanic onboarding* was created by Paul HERVET on Oct 02nd 2019\nThe project *COPYOFTITANICEGG* was copied from *TITANICEGG* by Paul HERVET on Nov 15th 2019",
   "tags": [
     "imported",
     "duplicated"
