@@ -1,4 +1,5 @@
 {
+  "name": "score_passengers_service",
   "endpoints": [
     {
       "modelRef": "ZlvVnLTT",
