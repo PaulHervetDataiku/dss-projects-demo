@@ -1,6 +1,8 @@
 
 from  dataiku.apinode.predict.predictor import ClassificationPredictor
 import pandas as pd
+import pickle
+
 class MyPredictor(ClassificationPredictor):
     """The class for a classification Custom API node predictor"""
 
@@ -48,7 +50,6 @@ class MyPredictor(ClassificationPredictor):
         
         
         
-        import pickle
         folder_path = self.data_folder
         pkl_filename = folder_path + "/pickle_model.pkl"
         
