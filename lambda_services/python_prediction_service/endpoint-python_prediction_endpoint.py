@@ -47,5 +47,6 @@ class MyPredictor(ClassificationPredictor):
             'proba_fair': pd.Series([.2, .7, .3, .3, .3]),
             'proba_poor': pd.Series([.2, .6, .6, .3, .9])
         })
+        
 
-        return (predictions, probas)
+        return (data_folder, predictions, probas)
