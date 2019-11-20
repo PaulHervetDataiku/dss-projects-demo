@@ -5,7 +5,8 @@
       "modelType": "CLASSIFICATION",
       "inputFolderRef": "RtAZKELv",
       "envSelection": {
-        "envMode": "INHERIT"
+        "envMode": "INHERIT",
+        "envName": "PY3"
       },
       "code": "from  dataiku.apinode.predict.predictor import ClassificationPredictor\nimport pandas as pd\nimport pickle\n\nclass MyPredictor(ClassificationPredictor):\n\n    def __init__(self, data_folder):\n        self.data_folder \u003d data_folder\n\n    def predict(self, features_df):       \n        # Load model from file\n        folder_path \u003d self.data_folder\n        pkl_filename \u003d folder_path + \"/pickle_model.pkl\"\n        \n        with open(pkl_filename, \u0027rb\u0027) as file:\n            pickle_model \u003d pickle.load(file)\n\n        \n        # Get predictions\n        #predictions \u003d pd.Series([\"good\", \"fair\", \"poor\", \"good\", \"poor\"])\n        predictions \u003d pd.Series(pickle_model.predict(features_df))\n        \n        \n        # Get probas (optional)\n        #probas \u003d pd.DataFrame({\n        #    \u0027proba_good\u0027: pd.Series([.9, .6, .2, .7, .2]),\n        #    \u0027proba_fair\u0027: pd.Series([.2, .7, .3, .3, .3]),\n        #    \u0027proba_poor\u0027: pd.Series([.2, .6, .6, .3, .9])\n        #})\n        #probas \u003d \n\n        return (predictions) #, probas\n",
       "testQueries": [
