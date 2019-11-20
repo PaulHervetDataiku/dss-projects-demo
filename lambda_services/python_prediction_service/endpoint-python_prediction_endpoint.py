@@ -38,6 +38,13 @@ class MyPredictor(ClassificationPredictor):
 
         print "Features DataFrame %s" % features_df
 
+        print("--------------------")
+        print("--------------------")
+        print("--------------------")
+        print(data_folder)
+        print("--------------------")
+        print("--------------------")
+        print("--------------------")
         # predictions, one per record (features_df row)
         predictions = pd.Series(["good", "fair", "poor", "good", "poor"])
 
