@@ -41,7 +41,7 @@ class MyPredictor(ClassificationPredictor):
         print("--------------------")
         print("--------------------")
         print("--------------------")
-        print(data_folder)
+        print(self.data_folder)
         print("--------------------")
         print("--------------------")
         print("--------------------")
