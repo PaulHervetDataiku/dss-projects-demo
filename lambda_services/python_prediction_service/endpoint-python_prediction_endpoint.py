@@ -61,7 +61,7 @@ class MyPredictor(ClassificationPredictor):
         
         # predictions, one per record (features_df row)
         #predictions = pd.Series(["good", "fair", "poor", "good", "poor"])
-        predictions = pickle_model.predict(features_df)
+        predictions = pd.Series(pickle_model.predict(features_df))
         
         # optional probas for each class (may be None or a DataFrame with one column per class)
         #probas = pd.DataFrame({
@@ -69,6 +69,6 @@ class MyPredictor(ClassificationPredictor):
         #    'proba_fair': pd.Series([.2, .7, .3, .3, .3]),
         #    'proba_poor': pd.Series([.2, .6, .6, .3, .9])
         #})
-        probas = 
+        #probas = 
 
         return (predictions) #, probas
