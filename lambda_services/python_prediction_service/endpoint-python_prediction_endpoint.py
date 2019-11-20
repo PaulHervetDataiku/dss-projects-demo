@@ -49,4 +49,4 @@ class MyPredictor(ClassificationPredictor):
         })
         
 
-        return (predictions, probas, self.data_folder)
+        return (predictions, probas)
