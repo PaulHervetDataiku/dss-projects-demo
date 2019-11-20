@@ -16,7 +16,7 @@ class MyPredictor(ClassificationPredictor):
         print("--------------------")
         print("--------------------")
         print("--------------------")
-        print(features_df)
+        print(type(features_df)
         print("--------------------")
         print("--------------------")
         print("--------------------")
