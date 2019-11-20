@@ -3,6 +3,7 @@
   "endpoints": [
     {
       "modelType": "CLASSIFICATION",
+      "inputFolderRef": "RtAZKELv",
       "envSelection": {
         "envMode": "INHERIT"
       },
