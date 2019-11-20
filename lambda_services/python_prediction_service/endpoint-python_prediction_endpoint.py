@@ -4,7 +4,7 @@ import pandas as pd
 class MyPredictor(ClassificationPredictor):
     """The class for a classification Custom API node predictor"""
 
-    def __init__(self, data_folder = None):
+    def __init__(self, data_folder = '/Users/phervet/dss_home/managed_folders/COPYOFTITANICEGG/RtAZKELv'):
         """data_folder is the absolute path to the managed folder storing the data for the model
         (if any)"""
         self.data_folder = data_folder
