@@ -27,6 +27,15 @@
       "healthCheckQueries": [],
       "id": "score_survival_endpoint_1",
       "type": "STD_PREDICTION"
+    },
+    {
+      "modelRef": "ZlvVnLTT",
+      "useJava": true,
+      "testQueries": [],
+      "enrichMapping": [],
+      "healthCheckQueries": [],
+      "id": "score_survival_endpoint_2",
+      "type": "STD_PREDICTION"
     }
   ],
   "publicAccess": true,
