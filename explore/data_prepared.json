@@ -50,8 +50,8 @@
       "def": {
         "type": "webapp",
         "variant": "normal",
-        "webAppType": "webapp_hierarchical-charts_treemap-chart",
-        "name": "Treemap chart",
+        "webAppType": "webapp_hierarchical-charts_sunburst-chart",
+        "name": "Sunburst",
         "userEditedName": false,
         "genericDimension0": [],
         "genericDimension1": [],
@@ -139,7 +139,10 @@
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT",
         "webAppConfig": {
-          "dataset": "data_prepared"
+          "dataset": "data_prepared",
+          "unit": "Sex",
+          "parent": "Title",
+          "size": "Sex"
         }
       },
       "maxDataBytes": 157286400
