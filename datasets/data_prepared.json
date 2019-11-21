@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1572442953228
+    "lastModifiedOn": 1574347574582
   },
   "creationTag": {
     "versionNumber": 0,
@@ -88,11 +88,13 @@
     "columns": [
       {
         "name": "PassengerId",
-        "type": "bigint"
+        "type": "string",
+        "meaning": "Text"
       },
       {
         "name": "Survived",
-        "type": "bigint"
+        "type": "string",
+        "meaning": "Text"
       },
       {
         "name": "Title",
