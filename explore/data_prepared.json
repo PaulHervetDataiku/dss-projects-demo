@@ -50,19 +50,16 @@
       "def": {
         "type": "stacked_columns",
         "variant": "normal",
-        "name": "Count by Age and Survived",
+        "name": "Count by Title and Survived",
         "userEditedName": false,
         "genericDimension0": [
           {
-            "column": "Age",
-            "type": "NUMERICAL",
+            "column": "Title",
+            "type": "ALPHANUM",
             "numParams": {
-              "mode": "FIXED_NB",
-              "nbBins": "15",
-              "binSize": 100,
               "emptyBinsMode": "ZEROS"
             },
-            "maxValues": 100,
+            "maxValues": 8,
             "generateOthersCategory": true,
             "oneTickPerBin": false,
             "filters": [],
@@ -86,9 +83,9 @@
               }
             ],
             "sort": {
-              "type": "NATURAL",
-              "label": "Natural ordering",
-              "sortAscending": true
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Count of records, descending"
             }
           }
         ],
@@ -230,7 +227,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABXElEQVRoQ+2YOw7CMAxA63II2DgG6sjOBFdBYkGilVjYOAliYGdCTByCjUvQoIqmsqJCYkJKSMyGakKfn+N8IInsAy55d+fbUY4/zQZjl/9lOjYDm2bKJC4KwxgSJyXYkmbgWnMwhtV5GrxhBkZrb5BNiw2z4Wdhc5c22ao5iLHeS1PmsA9bTQamVtFwcWiOgNfNZIy/47GqZ0EYZmBknA17cANi3bRsSlrOaZHAcpb1T9T+8Uk8A1Oz9i3DkIh1Fxd+3hj+KTBlvaQYVmPxHGZg6twyjG8t6a4MS+OivC+309Hv5rAOWD6/J6KY7y8rmVzd1vJV+VfAkPYa4GocQ2HksI8MdwGsSzqZtP6BEfCrI6BLw1EDf/My8C8Mq8A29luB362tuDEBiEIIcNK0XJ2r/xJYFUJpYMEB65IRBLCEhLLMRZrmeF+g2rc+PFDKyYdYBvbBgst3iM7wA5YjikemMvhvAAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAA50lEQVRoQ2NkGGGAEZd/1x1/sR9ZLshSwnE4hM2oh2GxOBrDo0l6aOZonHlYvnwLSqH1sNNneBdaox4ejeHRPDwkQmC00IJF02ihNVpoDYksi+HI0Tw8moehITDatByaWZhhNA+P5uHRPDxEMy/U2aN5mFAeHuqDeyTH8KiHh9hoJtVieN3xl9GoMxXiSwdj8UZFDw+NqZlRD5NbSg+Vwmw0hgnFMK6xrmEbw6R6eLAFBMlJGpeHSQ2IgaqyaO5hXAGx/thzM2RPB1pJnqJmIOBKWTg9TE3LB5NZox4eTLFBC7eMuBgGACai9Cmd4bAmAAAAAElFTkSuQmCC",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
