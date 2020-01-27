@@ -105,7 +105,7 @@
       }
     }
   },
-  "name": "Copy of Titanic EGG",
+  "name": "Titanic",
   "imgPattern": 8,
   "showInitials": false,
   "metrics": {
@@ -163,11 +163,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1573810753387
+    "lastModifiedOn": 1580120697978
   },
   "creationTag": {
     "versionNumber": 0,
