@@ -1,4 +1,5 @@
 {
+  "name": "Titanic_API_service",
   "endpoints": [
     {
       "modelRef": "ZlvVnLTT",
