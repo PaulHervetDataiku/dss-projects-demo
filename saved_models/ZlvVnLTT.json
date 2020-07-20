@@ -2,7 +2,7 @@
   "publishPolicy": "UNCONDITIONAL",
   "rebuildBehavior": "EXPLICIT",
   "name": "Prediction (LOGISTIC_REGRESSION) on labeled",
-  "activeVersion": "1595248519527",
+  "activeVersion": "1595248560447",
   "conditionalOutputs": [],
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -14,7 +14,7 @@
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
   },
-  "lastExportedFrom": "A-COPYOFTITANICEGG-iv0PiI89-Y13w2u3a-s1-pp2-m1",
+  "lastExportedFrom": "A-COPYOFTITANICEGG-iv0PiI89-Y13w2u3a-s1-pp1-m1",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -1087,11 +1087,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595248519648
+    "lastModifiedOn": 1595248560558
   },
   "creationTag": {
     "versionNumber": 0,
