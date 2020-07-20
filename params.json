@@ -16,6 +16,7 @@
   "settings": {
     "flowAnchorSourcesAndSinks": true,
     "gitCommitMode": "AUTO",
+    "useRemoteGit": true,
     "disableAutomaticTriggers": false,
     "integrations": {
       "integrations": []
@@ -97,11 +98,18 @@
         "containerSelection": {
           "containerMode": "INHERIT"
         },
+        "overrideGlobalK8sExposition": false,
         "exposition": {
           "type": "local_process",
           "params": {}
         },
-        "nbReplicas": 1
+        "scaling": {
+          "initialReplicas": 1,
+          "hpa": false,
+          "hpaTargetCPUPercent": 0,
+          "hpaMinPods": 0,
+          "hpaMaxPods": 0
+        }
       }
     }
   },
@@ -163,11 +171,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1580120697978
+    "lastModifiedOn": 1595246463279
   },
   "creationTag": {
     "versionNumber": 0,
@@ -183,9 +191,9 @@
   ],
   "customFields": {
     "gdpr_forbid_dataset_export": false,
-    "gdpr_forbid_dataset_sharing": false,
+    "gdpr_forbid_uploaded_datasets": false,
     "gdpr_forbid_model_creation": false,
-    "gdpr_forbid_uploaded_datasets": false
+    "gdpr_forbid_dataset_sharing": false
   },
   "checklists": {
     "checklists": [
