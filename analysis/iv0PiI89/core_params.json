@@ -6,6 +6,7 @@
     "columnsSelection": {
       "mode": "ALL"
     },
+    "columnWidthsByName": {},
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
       "individualColumns": [],
