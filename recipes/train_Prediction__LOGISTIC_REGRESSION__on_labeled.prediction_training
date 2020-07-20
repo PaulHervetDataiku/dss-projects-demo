@@ -3,9 +3,57 @@
     "envMode": "INHERIT"
   },
   "core": {
+    "taskType": "PREDICTION",
+    "executionParams": {
+      "envSelection": {
+        "envMode": "INHERIT"
+      },
+      "containerSelection": {
+        "containerMode": "INHERIT"
+      },
+      "sparkParams": {
+        "pipelineAllowMerge": true,
+        "sparkPreparedDFStorageLevel": "MEMORY_AND_DISK",
+        "pipelineAllowStart": true,
+        "sparkExecutionEngine": "SPARK_SUBMIT",
+        "sparkConf": {
+          "inheritConf": "default",
+          "conf": []
+        },
+        "sparkRepartitionNonHDFS": 1,
+        "sparkUseGlobalMetastore": false
+      },
+      "sparkCheckpoint": "NONE"
+    },
+    "backendType": "PY_MEMORY",
     "target_variable": "Survived",
     "weight": {
       "weightMethod": "CLASS_WEIGHT"
+    },
+    "time": {
+      "ascending": true,
+      "enabled": false
+    },
+    "partitionedModel": {
+      "ssdSelection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "latestPartitionsN": 1,
+        "maxRecords": -1,
+        "ordering": {
+          "rules": [],
+          "enabled": false
+        },
+        "withinFirstN": -1,
+        "partitionSelectionMethod": "ALL",
+        "targetRatio": 0.02,
+        "maxReadUncompressedBytes": -1,
+        "samplingMethod": "FULL"
+      },
+      "enabled": false
     },
     "calibration": {
       "calibrationMethod": "NO_CALIBRATION"
@@ -16,16 +64,29 @@
   "modeling": {
     "computeLearningCurves": false,
     "max_ensemble_nodes_serialized": 0,
+    "pluginAlgoCustomGridSearch": false,
     "logit_grid": {
-      "C": [
-        0.01,
-        0.1,
-        1.0,
-        10.0,
-        100.0
-      ],
-      "l1": false,
-      "l2": true,
+      "C": {
+        "values": [
+          0.01,
+          0.1,
+          1.0,
+          10.0,
+          100.0
+        ],
+        "nValues": 0,
+        "gridMode": "EXPLICIT"
+      },
+      "penalty": {
+        "values": {
+          "l1": {
+            "enabled": false
+          },
+          "l2": {
+            "enabled": true
+          }
+        }
+      },
       "n_jobs": 2,
       "multi_class": "ovr",
       "enabled": true
@@ -51,6 +112,7 @@
       "nFolds": 3,
       "nIter": 0,
       "stratified": true,
+      "strategy": "GRID",
       "shuffleIterations": 1,
       "randomized": true,
       "splitRatio": 0.8,
@@ -60,7 +122,8 @@
     "algorithm": "LOGISTIC_REGRESSION",
     "gridLength": 5
   },
-  "generatingModelId": "A-TITANICEGG-iv0PiI89-Y13w2u3a-s1-pp2-m1",
+  "partSource": "ACTIVE_VERSION",
+  "generatingModelId": "A-COPYOFTITANICEGG-iv0PiI89-Y13w2u3a-s1-pp2-m1",
   "preprocessing": {
     "reduce": {
       "kept_variance": 0.0,
@@ -436,6 +499,7 @@
     "userModified": false
   },
   "splitParams": {
+    "testOnLargerValues": true,
     "instanceIdRefresher": 0,
     "ssdSeed": 1337,
     "nFolds": 5,
@@ -465,10 +529,10 @@
     "kfold": false
   },
   "script": {
+    "contextProjectKey": "COPYOFTITANICEGG",
     "columnsSelection": {
       "mode": "ALL"
     },
-    "analysisColumnData": {},
     "explorationSampling": {
       "_refreshTrigger": 0,
       "selection": {
@@ -492,20 +556,22 @@
       "autoRefreshSample": false
     },
     "explorationFilters": [],
-    "sorting": [],
     "exploreUIParams": {},
-    "globalSearchQuery": "",
-    "coloring": {
-      "scheme": "MEANING_AND_STATUS",
-      "individualColumns": [],
-      "valueColoringMode": "HASH"
-    },
     "steps": [],
     "maxProcessedMemTableBytes": -1,
     "previewMode": "ALL_ROWS",
     "vizSampling": {
       "_refreshTrigger": 0,
       "autoRefreshSample": false
+    },
+    "analysisColumnData": {},
+    "columnWidthsByName": {},
+    "sorting": [],
+    "globalSearchQuery": "",
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
     }
   },
   "sparkParams": {
