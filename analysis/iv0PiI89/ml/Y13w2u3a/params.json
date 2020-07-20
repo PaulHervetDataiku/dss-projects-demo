@@ -393,7 +393,7 @@
       "max_feature_prop": 0.3
     },
     "random_forest_classification": {
-      "enabled": false,
+      "enabled": true,
       "n_estimators": {
         "values": [
           100
@@ -748,8 +748,7 @@
           0.1,
           1.0,
           10.0,
-          100.0,
-          1000.0
+          100.0
         ],
         "nValues": 0,
         "gridMode": "EXPLICIT"
@@ -902,7 +901,7 @@
       "K": 100
     },
     "xgboost": {
-      "enabled": false,
+      "enabled": true,
       "max_depth": {
         "values": [
           3
