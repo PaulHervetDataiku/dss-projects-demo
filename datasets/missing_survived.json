@@ -75,7 +75,7 @@
   "tags": [],
   "params": {
     "connection": "filesystem_managed",
-    "path": "/COPYOFTITANICEGG.missing_survived",
+    "path": "/GITDEMO.missing_survived",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",

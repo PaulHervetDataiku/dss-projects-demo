@@ -75,7 +75,7 @@
   "tags": [],
   "params": {
     "connection": "filesystem_managed",
-    "path": "/COPYOFTITANICEGG.titanic_data",
+    "path": "/GITDEMO.titanic_data",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",

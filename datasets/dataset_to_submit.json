@@ -75,7 +75,7 @@
   "tags": [],
   "params": {
     "connection": "filesystem_managed",
-    "path": "${projectKey}/dataset_to_submit",
+    "path": "/GITDEMO.dataset_to_submit",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",
