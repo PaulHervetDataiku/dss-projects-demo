@@ -113,7 +113,7 @@
       }
     }
   },
-  "name": "Titanic",
+  "name": "Git demo",
   "imgPattern": 8,
   "showInitials": false,
   "metrics": {
@@ -171,11 +171,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595252558151
+    "lastModifiedOn": 1595252560812
   },
   "creationTag": {
     "versionNumber": 0,
@@ -184,7 +184,7 @@
     },
     "lastModifiedOn": 1570007979680
   },
-  "shortDesc": "The project *Titanic onboarding* was created by Paul HERVET on Oct 02nd 2019\nThe project *COPYOFTITANICEGG* was copied from *TITANICEGG* by Paul HERVET on Nov 15th 2019",
+  "shortDesc": "The project *Titanic onboarding* was created by Paul HERVET on Oct 02nd 2019\nThe project *COPYOFTITANICEGG* was copied from *TITANICEGG* by Paul HERVET on Nov 15th 2019\nThe project *GITDEMO* was copied from *COPYOFTITANICEGG* by Paul HERVET on Jul 20th 2020",
   "tags": [
     "imported",
     "duplicated"
