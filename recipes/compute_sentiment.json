@@ -3,7 +3,9 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "customConfig": {},
+    "customConfig": {
+      "tweet_col": "tweet"
+    },
     "containerSelection": {
       "containerMode": "INHERIT"
     }
@@ -34,11 +36,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1595407079048
+    "lastModifiedOn": 1595407082153
   },
   "creationTag": {
     "versionNumber": 0,
