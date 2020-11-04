@@ -1,2 +1,2 @@
-def squared(x):
+def new_square(x):
     return x*x
