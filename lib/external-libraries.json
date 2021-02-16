@@ -1,10 +1,19 @@
 {
-  "gitReferences": {},
+  "gitReferences": {
+    "git_lib": {
+      "remote": "git@github.com:PaulHervetDataiku/mes_libs.git",
+      "checkout": "refs/heads/main",
+      "remotePath": ""
+    }
+  },
   "pythonPath": [
-    "python"
+    "python",
+    "git_lib"
   ],
   "rsrcPath": [
     "R"
   ],
-  "importLibrariesFromProjects": ["LIBS"]
+  "importLibrariesFromProjects": [
+    "LIBS"
+  ]
 }
