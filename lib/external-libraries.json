@@ -3,7 +3,8 @@
     "git_lib": {
       "remote": "git@github.com:PaulHervetDataiku/mes_libs.git",
       "checkout": "refs/heads/main",
-      "remotePath": ""
+      "remotePath": "",
+      "lastHash": "84917da6bf461ad89a3c24c1cf8e79c42eb5ee81"
     }
   },
   "pythonPath": [
